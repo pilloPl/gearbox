@@ -2,8 +2,6 @@ package pl.januszsoft.driver;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 import pl.januszsoft.carspecific.boringcommoncar.OptimalRange;
 import pl.januszsoft.driver.calculator.GearCalculators;
@@ -17,16 +15,12 @@ import static org.mockito.Mockito.when;
 
 class GearboxDriverTest {
 
-    @InjectMocks
     GearboxDriver driver;
 
-    @Mock
     GearCalculators gearCalculators;
 
-    @Mock
     Shifter shifter;
 
-    @Mock
     RpmProvider rpmProvider;
 
     @BeforeEach
